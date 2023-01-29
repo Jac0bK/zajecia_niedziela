@@ -15,5 +15,13 @@ List Basic
 
     append to list   ${my_list}   ${4}
     append to list   ${my_list}   wyraz
+    append to list   ${my_list}   wyraz
     append to list   ${my_list}   ${slowo}
     LOG     ${my_list}
+
+    ${my_list}   remove duplicates  ${my_list}
+    LOG     ${my_list}
+    remove values from list    ${my_list}  2   3
+    LOG     ${my_list}
+
+    list should contain value   ${my_list}   WSB
