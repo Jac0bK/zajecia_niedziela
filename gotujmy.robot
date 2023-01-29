@@ -11,7 +11,7 @@ ${message}    Dziękujemy za założenie nowego konta.
 Open Web_Browser
     Open Browser    https://gotujmy.pl/forum/    Chrome
     maximize browser window
-
+ # zminiejsza okno execute javascript    document.body.style.zoom='70%'
 Registration in Forum
     [Arguments]    ${name}    ${password}
     Open Web_Browser
