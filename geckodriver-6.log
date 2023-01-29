@@ -8,3 +8,6 @@ WebDriver BiDi listening on ws://127.0.0.1:55195
 1674984547970	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\VDI-ST~1\\AppData\\Local\\Temp\\rust_mozprofileMNsZWE\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:55195/devtools/browser/709b2fc4-b1ec-47f0-8dbb-a6b5e24b4325
+1674986146068	Marionette	INFO	Stopped listening on port 55200
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

@@ -41,3 +41,25 @@ For Loop In Range 4 30 3
     FOR    ${i}    IN RANGE    4    30    3
         Log    ${i}
     END
+
+For Loop with Break
+    @{my_list}    create list    Mama    Tata    Pies    Kot    Ptak    I jeszcze cos
+    FOR    ${name}   IN   @{my_list}
+        IF    $name =='Pies'   BREAK
+        log    ${name}
+    END
+
+For LOOP with continue
+    @{my_list}    create list    Mama    Tata    Pies    Kot    Ptak    I jeszcze cos
+    FOR    ${name}   IN   @{my_list}
+        IF    $name =='Pies'  CONTINUE
+        log   ${name}
+    END
+
+While LOOP
+    ${index}    set variable  10
+    WHILE    ${index} > 0
+        Log    ${index}
+        ${index}    evaluate  ${index} - 1
+    END
+
